@@ -41,7 +41,7 @@ clean:
 		.gopath \
 		direnv
 
-GO_LDFLAGS =
+GO_LDFLAGS =-s -w
 
 ifeq ($(shell uname), Darwin)
 	# Fixes DYLD_INSERT_LIBRARIES issues
